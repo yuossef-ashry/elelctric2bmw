@@ -1,0 +1,144 @@
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            color: #ffffff;
+            padding: 20px;
+            background-color: #000000;}
+        h1 {
+            margin-bottom: 20px;
+            color: #00A1E4;}
+        hr {
+            width: 50%;
+            margin: 20px auto;
+            border-color: #00A1E4; }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .section {
+            width: 30%; 
+            margin: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 15px; 
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.05); }
+                .section h2 {
+                    color: #00A1E4; }
+                     .section p {
+                    color: #000000;
+                }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .feature-title {
+            font-size: 2.3em;
+            margin-top: 10px;
+            color: #00A1E4;
+        }
+        .feature-description {
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        .full-width-container {
+       margin-top: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+        }
+        .full-width-section {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px;
+        }
+        .new-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .new-section-text {
+            width: 60%;
+            text-align: left;
+            padding: 20px;
+            color: white;
+        }
+          .new-section-text h2 {
+    font-size: 50px;
+    color: #00A1E4;
+        }
+            .new-section-text p {
+    font-size: 30px;
+        }
+        .new-section img {
+            width: 60%;
+            height: auto;
+        }
+        .main-title {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #00A1E4;
+        }
+         .main-title p {
+           
+            color: #ffffff;
+        }
+        .faq-title {
+            font-size: 2em;
+            margin-top: 40px;
+            color: #00A1E4;
+        }
+        .blue-text {
+            color: #00A1E4;
+            font-size: 1.5em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .faq-answer {
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2em;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(255,255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .question-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* استعلامات الوسائط لتحسين العرض على الهواتف المحمولة */
+        @media (max-width: 768px) {
+            .section, .full-width-section {
+                width: 90%; /* جعل العرض 90% على الشاشات الصغيرة */
+                margin: 10px auto; /* توسيط العناصر */
+            }
+            .navbar a {
+                font-size: 1em; /* تقليل حجم النص في شريط التنقل */
+                margin: 0 10px; /* تقليل المسافة بين الروابط */
+            }
+            .feature-title {
+                font-size: 1.2em; /* تقليل حجم عنوان الميزة */
+            }
+            .feature-description {
+                font-size: 0.9em; /* تقليل حجم وصف الميزة */
+            }
+            .main-title, .faq-title {
+                font-size: 1.5em; /* تقليل حجم العناوين الرئيسية */
+            }
+            .blue-text {
+                font-size: 1.2em; /* تقليل حجم النص الأزرق */
+            }
+        }
